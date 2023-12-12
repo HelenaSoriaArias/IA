@@ -131,42 +131,41 @@ En contraste, en la actualidad la IA esta tomando cada día más fuerza y se pue
 
 ### Capítulo 2
 
-_Agentes inteligentes_ es el capítulo 2 del libro y se enfoca en los agentes racionales y la capacidad de tomar la mejor decisión de acuerdo a la circunstancia. En orden de explicar esto, lo primero es definir **agente racional** como cualquier cosa que recibe señales del exterior con **sensores** e interactua con el mundo real con **actuadores**.  
+_Agentes inteligentes_ es el capítulo 2 del libro y se enfoca en los agentes racionales y la capacidad de tomar la mejor decisión de acuerdo a la circunstancia. En orden de explicar esto, lo primero es definir **agente** como cualquier cosa que recibe señales del exterior con **sensores** e interactua con el mundo real con **actuadores**, aunque el libro también provee una definición más formal para el concepto de **agente racional**, un tipo específico de agentes en los cuales profundiza más este capítulo.  
+
+**Definición de agente racional**
+>En cada posible secuencia de percepciones, un agente racional deberá emprender aquella acción que supuestamente maximice su medida de rendimiento, basándose en las evidencias aportadas por la secuencia de percepciones y en el conocimiento que el agente
+mantiene almacenado.
 
 Lo sorprendente es que los humanos también son agentes racionales, utilizamos la **percepción** (entradas de información a nuestro cerebro), mientras que nuestra memoria seria el equivalente a una **secuencia de percepciones**. 
 
+**Función de agente**
+El comportamiento teorico matemático que determina la decisión del agente en comparación con cierta secuencia de percepciones,se puede representar en 1 tabla de un lado mostrando la secuencia y del otro el resultado.
 
+**Programa del agente**
+Es la implementación en código de la función del agente.
 
+**Arquictura del agente**
+Es la implementación física de un agente, los componentes electronicos que físicamente forman al agente y permiten que corra su programa.
 
+**Medidas de rendimiento**
+Factores que sirven como metrica para determinar el exito, fracaso y rendimiento de un agente racional.
 
+**Omniciencia**
+La omniciencia de un agente es que este sepa el futuro que ocurrira con las decisiones que puede tomar, sin embargo esto es imposible. El agente solo sabe que ocurrira en base a sus entradas, y si los usuarios no le agregan entradas no calculara efectivamente el futuro. Y los propios usuarios no conocen el futuro, entonces no agregan la información correspondiente y por lo tanto el agente tiene una visión del futuro limitada. Se concluye que a menos que las bolas de cristal o los viajeros en el tiempo den información correcta no existiran agentes perfectos.
 
+**Entornos de trabajo (REAS)**
+Un entorno de trabajo es todas las espeçificaciones y variables relevantes para resolver un problema por mediod e un agente. La cantidad y tipo de sensores, actuadores, las medidas de rendimiento y el contexto donde se va a utilizar el agente son todas partes de un entorno de trabajo. Entre sus características hay:
 
+    1. Visible o parcialmente visible.
+    
+    Si los actuadores detectan todo el entorno en todo momento, es visible. Si hay limitaciones de tiempo o alcance es parcialmente visible.
 
+    2.Determinista vs. estocástico.
 
+    La cantidad de influencia del estado actual sobre el agente define si es determinista o estocástico. Determinística si hay mucha influencia, estocástico si el entorno no afecta al agente.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    3.
 
 ### Capítulo 26
 El capítulo 26: _Fundamentos filosóficos_ es de los más interesantes para examinar porque invita a la reflexión del lector con multiples preguntas, entre ellas la más importante es : _¿Las máquinas realmente piensan?_. Con esto abre 2 hipótesis: la hipótesis de la **IA fuerte** y la hipótesis de la **IA débil**.La IA débil asume que las máquinas con IA no tienen verdadera inteligencia, ya que sólo hacen lo que se les programo para hacer y en realidad no aportan nada propio. En contraste, la hipótesis de la IA fuerte hace referencia a máquinas con la misma capaidd de pensar de los humanos.
@@ -184,12 +183,29 @@ En el otro extremo está el _argumento de la informalidad_ dónde explica que el
 
 ### Capítulo 27
 
-## Conclusiones
-Los capítulos seleccionados son interesantes porque abarcan la IA desde puntos de vista no técnicos y te hacen cuestionar el propósito de la IA, ya que antes de empezar con el modelado y tipos de IA, primero hay que cuestionarse _¿Por qué se esta creando una IA?_ _¿Qué problema va a resolver?_.
+Este es el último capítulo del libro y habla, como su título sugiere, del presente y futuro que nos espera en la IA. Antes de continuar quiero aclarar que este libro fue publicado en 2004, por lo que los sistemas que dicen ser presente no están actualizados a la fecha (2023).
+Se menciona como la entrada de datos a un agente ha sido uno de los mayores problemas de la Inteligencia Artificial,en contraste puedo decir que la entrada de datos se ha facilitado desde el punto de vista técnico, pero no desde el punto de vista financiero. El desarrollo de agentes racionales y la robótica sigue considerandose una actividad cara, aunque no inalcanzable.
 
-En cuanto al capítulo 1, es altamente historico,ese capítulo por si sólo tiene material para extenderse hasta todo un libro nada más hablando de las figuras involucradas en el desarrollo de la IA. A ratos me pareció interesante  y a ratos irrelevante, dependiendo de la figura historico a la que se estuviera refiriendo; de cualquier manera, como introducción no es un mal contenido.
+También se habla de las arquiecturas de los agentes, no detallandolas como antes, sino específicando las ventajas y desventajas de cada una, de manera que el lector sea quién tome la decisión de cual de todas es la que más necesita, y tomar en cuenta que el objetivo de estos agentes es que tomen decisiones en tiempo real, por lo que hay un límite de lo que se puede controlar.
+
+Lo más interesante de este capítulo es la pregunta de adonde nos llevará la IA, y si nos encontramos en la busqueda de la *racionalidad perfecta*, que significa tomar la mejor decisión, en el mejor momento, en las mejores condiciones. ¿Qué ocurre cuando esto no se cumple? Si ya es muy tarde para tomar la mejor decisión, sólo se tiene *racionalidad calculada*; si no hay las mejores condiciones, entonces es *racionalidad limitada* y si la mejor opción no esta disponible por cualquier razón, entonces es *optimalidad limitada*.
+
+Con los conceptos anteriores sabemos que la IA sigue el camino de la optimalidad limitada, los humanos no tienen idea de cual es la mejor y perfecta IA, no pueden crearla en el instante y existen las limitaciones de recursos (financieros y tecnológicos) para poder llegar a la IA perfectamente racional.
+
+Hacia el final se indaga en la cuestión ética, incluso si en el futuro se desarrolla la IA perfectamente racional y se hace un salto tecnológico exponencial, queda la duda de si no podrá ser utilizado con propósitos cuestionables.Considerando que los computadores se han vuelto cada vez más importantes en la sociedad y que la IA esta lentamente abarcando aspectos de la vida cotidiana, el impacto a la sociedad sería mayor de ser utilizado para mal.
+
+También existe el impacto en el trabajo y la economía, porque aquellos con aptitudes para la tecnológia tienen más oportunidades laborales y salarios más altos que otros, al menos según los autores. La realidad del 2023 es que las empresas ya no contratan personas que no sepan manejar ordenadores, no todos los trabajos tienen que ver con las computación, pero se suele pedir un mínimo de herramientas electronicas.
+
+En cuanto a un futuro apocalíptico como los que sugieren los autores de ciencia ficción, deben quedarse adentro de la ciencia ficción y no aparecer en el mundo real, porque los futuros post-apocaliptiicos donde gobiernan las máquinas no le convienen a la sociedad humana.
+
+## Conclusiones
+
+Mi opinión con respecto al capítulo 1 es que es altamente historico,ese capítulo por si sólo tiene material para extenderse hasta todo un libro nada más hablando de las figuras involucradas en el desarrollo de la IA. A ratos me pareció interesante  y a ratos irrelevante, dependiendo de la figura historico a la que se estuviera refiriendo; de cualquier manera, como introducción no es un mal contenido. El capítulo 2 es, al contrario, lleno de tecnicismos y específicaciones sobre los agentes inteligentes.
+
+En contraste, los ultimos capítulos fueron muy interesantes por que hablan del lado filosofico y ético de la IA, tanto como desarrollador como miembro de la sociedad  es importante pensar que uso y que implicaciones tiene hacer que las máquinas piensen.
 
 ## Referencias
 
 RUSSELL, S. J.; NORVIG, P. INTELIGENCIA ARTIFICIAL. UN ENFOQUE MODERNOSegunda edición
 PEARSON EDUCACIÓN, S.A., Madrid, 2004. ISBN: 978-84-205-4003-0
+ 

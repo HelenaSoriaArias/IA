@@ -3,12 +3,13 @@ import time
 import keyboard
 import sys
 
-i = 0
+i = 1
 while True:
 
-    if keyboard.is_pressed("i"):
+    if keyboard.is_pressed("a"):
         img1 = pyautogui.screenshot()
-        img1.save("D:/Flores/H"+str(i) +".png")  
+        img1.save("D:/Flores/R"+str(i) +".png")  
         i = i+1
     if keyboard.is_pressed("e"):
         sys.exit(0)
+ 
