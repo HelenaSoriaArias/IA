@@ -70,7 +70,7 @@ Fue hasta 1956 que se acoplo el término inteligencia artificial durante el tall
 En 1959, Arthur Samuel acuñó el término Machine Learning mientras trabajaba en IBM. Por su parte, John McCarthy y Marvin Minsky fundaron el MIT Artificial Intelligence Project. En 1963, John McCarthy también creó el «AI Lab» en la Universidad de Stanford.
 ## Tipos de inteligencia artificial
 
-## Machine Learning
+### Machine Learning
 Machine Learning es una rama de la inteligencia artificial que se centra en crear programas o sistemas capaces de aprender por medio de la experiencia, esto se traduce en un programador definiendo las reglas de aprendizaje una única vez y despúes el programa mejorando sus procesos autómaticamente por medio de la inducción de grandes volúmenes de datos.
 
 Bagnato indica que la primera parte del Machine Learning es conocida como EDA o Análisis Exploratorio de Datos: un EDA tiene 2 prerrequisitos, un conjunto de datos a analizar y un objetivo del análisis. Al finalizar un EDA se consiguen conclusiones sobre el conjunto de datos, y de esas conclusiones se espera que los programadores o stakeholders tomen decisiones.
@@ -84,7 +84,22 @@ Si el problema no tiene datos continuos es mejor utilizar la regresión lógisti
 hasta llegar los nodos finales y que equivalen a respuestas a la solución: Si/No.
 
 
-## Redes Neuronales Artificiales
+¿Qué es Deep Learning?
+Deep learning es un subconjunto de machine learning, que es básicamente una red neuronal con tres o más capas. Estas redes neuronales intentan emular el comportamiento del cerebro humano —aunque lejos de igualar su capacidad— pero le permiten "aprender" a partir de grandes cantidades de datos. Aunque una red neuronal con una sola capa ya puede realizar predicciones aproximadas, las capas ocultas adicionales ayudan a optimizar y refinar la precisión.
+
+Deep learning impulsa muchos servicios y aplicaciones de inteligencia artificial (IA) que mejoran la automatización, realizando tareas analíticas y físicas sin intervención humana. La tecnología de deep learning reside detrás de muchos productos y servicios de uso cotidiano (como los asistentes digitales, los controles de TV habilitados por voz y la detección de fraudes con tarjeta de crédito), así como de tecnologías emergentes (como los automóviles autónomos).
+
+ Deep learning se distingue del machine learning clásico por el tipo de datos con los que trabaja y los métodos mediante los cuales aprende.
+
+Los algoritmos de machine learning aprovechan los datos estructurados y etiquetados para realizar predicciones, lo que conlleva la definición de características específicas durante la entrada de datos para el modelo y su organización en tablas. Esto no significa necesariamente que no utilice datos no estructurados, solo que si lo hace, normalmente pasa por algún procesamiento previo para organizarlos en un formato estructurado.
+
+Deep learning elimina parte del procesamiento previo de datos que requiere machine learning. Estos algoritmos pueden ingerir y procesar datos no estructurados, como texto e imágenes, y automatizan la extracción de características, eliminando parte de la dependencia de expertos humanos. Por ejemplo, pongamos que tenemos un conjunto de fotos de diferentes mascotas, y queremos categorizarlo por "gato ", "perro", "hámster", etc. Los algoritmos de deep learning pueden determinar qué características (por ejemplo, las orejas) son las más importantes para distinguir a un animal de otro. En machine learning, esta jerarquía de características la establece manualmente un experto humano.
+
+A continuación, a través de los procesos de pendiente de gradiente y propagación inversa, el algoritmo de deep learning se ajusta y se adapta a sí mismo para ganar precisión, lo que le permite realizar predicciones sobre una nueva foto de un animal con mayor precisión.  
+
+Los modelos de machine learning y deep learning admiten diferentes tipos de aprendizaje, que generalmente se clasifican como aprendizaje supervisado, aprendizaje no supervisado y aprendizaje de refuerzo. El aprendizaje supervisado utiliza conjuntos de datos etiquetados para categorizar o realizar predicciones; esto requiere algún tipo de intervención humana para etiquetar correctamente los datos de entrada. Por el contrario, el aprendizaje no supervisado no requiere conjuntos de datos etiquetados y, en cambio, detecta patrones en los datos y los agrupa en función de cualquier característica distintiva. El aprendizaje de refuerzo es un proceso en el que un modelo aprende a ser más preciso para realizar una acción en un entorno basándose en los comentarios para maximizar el resultado.
+
+### Redes Neuronales Artificiales
 
 Serrano, Soria y Martín explican las redes neuronales empezando por el concepto de neurona, la cual es la partícula mínima significativa del cerebro y donde millones de ellas forman enlaces jerarquicos que reciben el nombre de capas, al menos desde el punto de vista de la neurología; en este caso las neuronas artificiales hacen analogía a las neuronas humanasy son expresadas en terminos de computación. 
 
@@ -99,8 +114,31 @@ Las partes de una red neuronal, y las cuales no pueden nunca faltar son:
 3. Sumador
 4. Umbral
 
-Pero la ventaja real de implementar una red neuronal artificial no yace en sus características, sino en el procesamiento de información en paralelo que estás permiten.
+Y se pueden clasificar en :
 
+1. Redes monocapa: Solo tiene una capa de neuronas
+
+2. Redes multicapa: 2 o más capas de neuronas
+
+3. Redes no recurrentes: Las conexiones van en 1 solo sentido  y no hay retroalimentación
+
+4. Redes recurrentes: Hay retroalimentación entre neuronas de diferentes capas, de la misma capa o retroalimentación a sí misma.
+
+5. Redes totalmente conectadas: Todas las neuronas se conectan hacia la capa siguiente.
+
+6. Redes parcialmente conectadas: Al menos una neurona no pasa hacia la capa siguiente.
+
+Las redes neuronales artificiales requieren que se les definaun método de aprendizaje, siendo los posibles:
+
++  Supervisado
+    + Supervisado por refuerzo
+    + Supervisado por corrección
++ No supervisado
+    
+En el aprendizaje supervisado hay un sistema de clasificación y etiquetamiento de los datos, además los valores de la salida de datos se encuentran predefinidos en un rango entre correctos y no correctos. Su variante por refuerzo sólo indica si la salida es correcta o no. Mientras que la variante por corrección manda parametros que indiquen la desviación de la respuesta correcta. En el aprendizaje no sueprvisado los datos tanto de entrada como salida no se encuentran ni clasificados ni definidos.
+
+
+Pero la ventaja real de implementar una red neuronal artificial no yace en sus características, sino en el procesamiento de información en paralelo que estás permiten.
 
 ## Aplicaciones de la Inteligencia Artficial
 Bramer[5] explora las aplicaciones de la inteligencia artificial diviendola por áreas de la investigación, de lo más relevante que se encuentra son las aplicaciones médicas, educativas, financieras y electronicas.

@@ -20,5 +20,8 @@ Generar un dataset y haarcascade de caras con cubre bocas puntos a evaluar:
         El  codigo ajusta inmediatamente las fotos a la medida de 36 x 36
         Desventajas:
         La resolución de la cámara es baja.
-    3. Las fotos son personales, de familiares y amigos cercanos.
+    3. Las fotos son personales y de familiares
 
+3. Ajustes al XML
+    Tamaño mínimo de 60x60
+    Minimo de 100 vecinos 

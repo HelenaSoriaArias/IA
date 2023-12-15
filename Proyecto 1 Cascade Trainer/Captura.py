@@ -3,7 +3,7 @@ import cv2      as cv
 import math
 
 cap = cv.VideoCapture(0)
-i   = 1609
+i   = 0
 while True:
     ret, frame1 = cap.read()
     frame1 = cv.rectangle(frame1,(100,100), (400,400),(255,0,0),3)
@@ -20,7 +20,7 @@ while True:
         height = int(frame2.shape[0] * scale_percent / 100)
         dim = (width, height)
         resized = cv.resize(frame2, dim, interpolation = cv.INTER_AREA)
-        cv.imwrite("D:/Cubrebocas/Fondo"+str(i) +".jpg", resized)
+        cv.imwrite("D:/Cubrebocas/Fotos"+str(i) +".jpg", resized)
         print("Foto guardada")
     if k == 27:
         break

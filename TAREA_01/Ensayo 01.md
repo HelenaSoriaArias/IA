@@ -165,7 +165,7 @@ Un entorno de trabajo es todas las espeçificaciones y variables relevantes para
 
     La cantidad de influencia del estado actual sobre el agente define si es determinista o estocástico. Determinística si hay mucha influencia, estocástico si el entorno no afecta al agente.
 
-    3.
+
 
 ### Capítulo 26
 El capítulo 26: _Fundamentos filosóficos_ es de los más interesantes para examinar porque invita a la reflexión del lector con multiples preguntas, entre ellas la más importante es : _¿Las máquinas realmente piensan?_. Con esto abre 2 hipótesis: la hipótesis de la **IA fuerte** y la hipótesis de la **IA débil**.La IA débil asume que las máquinas con IA no tienen verdadera inteligencia, ya que sólo hacen lo que se les programo para hacer y en realidad no aportan nada propio. En contraste, la hipótesis de la IA fuerte hace referencia a máquinas con la misma capaidd de pensar de los humanos.

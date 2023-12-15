@@ -4,16 +4,17 @@ import cv2
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 #Se captura video en la cámara 0
 
-cclassifier = cv2.CascadeClassifier('D:/Cubrebocas/classifier/cascade.xml')
+cclassifier = cv2.CascadeClassifier('D:/Cubrebocas/cascade.xml')
 #Se crea el clasificador usando el xml deseado
 while True:
 	ret,frame 		= cap.read()
 	gray 			= cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	faces 			= cclassifier.detectMultiScale(
 		gray,
-		scaleFactor 	= 5,
-		minNeighbors 	= 200,
+		scaleFactor 	= 7,
+		minNeighbors 	= 300,
 		minSize			= (70,70),
+		maxSize			= (1000,1000)
 	)
 
 	for (x,y,w,h) in faces:
